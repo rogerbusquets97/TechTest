@@ -16,6 +16,12 @@ namespace PostProcessing
 
         private RenderTexture _DownscaledRenderTexture;
 
+        public static PostProcess Instance { get; private set;}
+
+        private void Awake()
+        {
+            Instance = this;
+        }
 
         private void OnEnable()
         {
@@ -40,6 +46,11 @@ namespace PostProcessing
             {
                 Graphics.Blit(source, destination);
             }
+        }
+
+        public void ToggleEffect()
+        {
+            _EffectActive = !_EffectActive;
         }
     }
 }

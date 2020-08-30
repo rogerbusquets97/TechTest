@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayerInput : MonoBehaviour
 {
@@ -11,5 +12,10 @@ public class PlayerInput : MonoBehaviour
     {
         Horizontal = Input.GetAxis("Horizontal");
         Vertical = Input.GetAxis("Vertical");
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            PostProcessing.PostProcess.Instance.ToggleEffect();
+        }
     }
 }
