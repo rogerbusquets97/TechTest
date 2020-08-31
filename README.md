@@ -27,7 +27,7 @@ Tech Test for MadBox
 * I would also add some UI.
 * Of course I would polish a lot the game, add character animations, models for the obstacles, ...
 
-## Whay did I think
+## What did I think
 * I really enjoyed coming back to game development with Unity!
 * I think the example game is a great choice that while being simple allows the developer to show off some of his skills.
 * Event though I'm happy with the result I feel I can do way better (the time constraint got me a bit nervous here).
